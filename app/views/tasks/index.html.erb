@@ -10,15 +10,20 @@
   </div>
 <% end %>
 
-<div style="font-size: bold;
-            color: #555;
-            background-color: #ccc;
-            display: inline-block;
-            padding: .25rem;
-            margin-bottom: 3rem;
-            <%= 'color: #f00; font-weight: bold;' if @invalid %>">
+<textarea disabled
+          style="font-weight: bold;
+                 font-size: 1rem;
+                 color: #555;
+                 background-color: #ccc;
+                 display: inline-block;
+                 width: 30rem;
+                 height: 8rem;
+                 padding: .25rem;
+                 margin-bottom: 3rem;
+                 resize: none;
+                 <%= 'color: #f00; font-weight: bold;' if @invalid %>">
   <%= @query || 'Query made will be shown here' %>
-</div>
+</textarea>
 <% if @tasks %>
   <table>
     <thead>
